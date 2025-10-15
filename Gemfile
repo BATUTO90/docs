@@ -7,8 +7,8 @@ source "https://rubygems.org"
 
 # Choo choo 🚝 (only include the Rails gems we need)
 gem "actionpack", "~> 8.0.2"
-gem "actionview", "~> 8.0.1"
-gem "activesupport", "~> 8.0.1"
+gem "actionview", "~> 8.0.2"
+gem "activesupport", "~> 8.0.2"
 gem "railties", "~> 8.0.2"
 
 # Use Puma as the app server
@@ -62,7 +62,7 @@ group :development do
   # Access an interactive console on exception pages or by calling `console` anywhere in the code.
   gem "web-console"
   gem "pry"
-  gem 'graphql-client'
+  gem 'graphql-client', '>= 0.26.0'
 end
 
 group :test do
@@ -77,5 +77,5 @@ group :test do
 end
 
 group :test do
-  gem "buildkite-test_collector"
+  gem "buildkite-test_collector", ">= 2.3.2"
 end
