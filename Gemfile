@@ -44,7 +44,7 @@ gem 'front_matter_parser'
 gem 'matrix'
 
 # Asset compilation
-gem 'vite_rails'
+gem 'vite_rails', '>= 3.0.20'
 
 # No page reloads
 gem 'turbo-rails', '>= 2.0.12'
